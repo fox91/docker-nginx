@@ -1,4 +1,4 @@
-FROM ubuntu:trusty-20150320
+FROM ubuntu:trusty
 
 MAINTAINER Andrea Falco <fox91fox@gmail.com>
 
@@ -15,7 +15,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/cache/nginx", "/var/log/nginx", "/var/www/html"]
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
+
+VOLUME ["/var/cache/nginx"]
 
 WORKDIR /etc/nginx
 
