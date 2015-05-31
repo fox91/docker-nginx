@@ -8,9 +8,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C300EE8C \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
       nginx=${NGINX_VERSION} \
- && apt-get autoremove \
- && apt-get autoclean \
- && apt-get clean \
+      --no-install-recommends \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
