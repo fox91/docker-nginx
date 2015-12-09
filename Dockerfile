@@ -1,4 +1,4 @@
-FROM nginx:1.9.7
+FROM nginx:1.9.8
 MAINTAINER Andrea Falco <fox91fox@gmail.com>
 
 COPY content /usr/src/myapp
