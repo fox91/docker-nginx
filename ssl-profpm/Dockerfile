@@ -1,4 +1,4 @@
-FROM fox91/nginx:1.9.7-ssl
+FROM fox91/nginx:1.9.8-ssl
 MAINTAINER Andrea Falco <fox91fox@gmail.com>
 
 COPY conf /etc/nginx
