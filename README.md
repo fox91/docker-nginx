@@ -8,3 +8,5 @@
 -	[`1.9.10-ssl`, `1.9-ssl`, `1-ssl`, `ssl` (*ssl/Dockerfile*)](https://github.com/fox91/docker-nginx/blob/master/ssl/Dockerfile)
 -	[`1.9.10-ssl-profpm`, `1.9-ssl-profpm`, `1-ssl-profpm`, `ssl-profpm` (*ssl-profpm/Dockerfile*)](https://github.com/fox91/docker-nginx/blob/master/ssl-profpm/Dockerfile)
 -	[`1.9.10-ssl-profpm-catchall`, `1.9-ssl-profpm-catchall`, `1-ssl-profpm-catchall`, `ssl-profpm-catchall` (*ssl-profpm-catchall/Dockerfile*)](https://github.com/fox91/docker-nginx/blob/master/ssl-profpm-catchall/Dockerfile)
+
+[![](https://badge.imagelayers.io/fox91/nginx:latest.svg)](https://imagelayers.io/?images=fox91/nginx:1.9.10,fox91/nginx:1.9.10-profpm,fox91/nginx:1.9.10-profpm-catchall,fox91/nginx:1.9.10-ssl,fox91/nginx:1.9.10-ssl-profpm,fox91/nginx:1.9.10-ssl-profpm-catchall)
