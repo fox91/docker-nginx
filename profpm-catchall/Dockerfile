@@ -1,4 +1,4 @@
-FROM nginx:1.10.0
+FROM nginx:1.10.1
 MAINTAINER Andrea Falco <fox91fox@gmail.com>
 
 COPY content /usr/src/myapp
